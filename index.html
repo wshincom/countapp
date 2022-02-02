@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <meta name="robots" content="noindex">
+    <title>文字数カウンター</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5 colored">
+      <div class="col-lg-6 col-md-8 mx-auto" id="countLenth">
+        <h1 class="fw-light">文字数カウンター</h1>
+        <p class="lead text-muted"  id="countLenth">現在の文字数：<strong>{{ getLenth() }}</strong> 文字（改行含）</p>
+        <p>
+          <div class="mb-3">
+            <textarea
+              placeholder="ここに文字を入力"
+              class="form-control"
+              rows="3"
+              type="text"
+              v-model="sentence_length"
+            ></textarea>
+          </div>
+        </p>
+      </div>
+    </div>
+    <p>&copy; Shin Watanabe</p>
+  </section>
+
+</main>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+
+      
+  </body>
+</html>

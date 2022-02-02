@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* 文字数カウント背景色 */
+.countText {
+background-color:#cccccc;
+font-size: large;
+color: #000000;
+}
+
+/* 背景色 */
+body {
+  background-color: #fcc800;
+}
+
+html,body{
+    height: 95%;
+}
+
+textarea {
+height:40vh;
+}
+
+.colored {
+  background-color: #fff4c1;
+  border-radius: 50px;
+  height: 95%;
+}
